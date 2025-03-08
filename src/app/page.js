@@ -9,7 +9,7 @@ export default function Home() {
   const handleGreet = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:8080/backend", {
+      const response = await fetch("https://nxtrpr.onrender.com/backend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
@@ -29,7 +29,7 @@ export default function Home() {
   const handleGoodbye = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:8080/goodbye", {
+      const response = await fetch("https://nxtrpr.onrender.com/goodbye", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
