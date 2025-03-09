@@ -9,7 +9,7 @@ export default function Home() {
   const handleGreet = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("nxtrpr.railway.internal/backend", {
+      const response = await fetch("https://nxtrpr-production-fce4.up.railway.app/backend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
@@ -29,7 +29,7 @@ export default function Home() {
   const handleGoodbye = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://nxtrpr.railway.internal/goodbye", {
+      const response = await fetch("https://nxtrpr-production-fce4.up.railway.app/goodbye", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
