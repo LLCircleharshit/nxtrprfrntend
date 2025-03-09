@@ -9,7 +9,7 @@ export default function Home() {
   const handleGreet = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://nxtrpr.railway.internal/backend", {
+      const response = await fetch("nxtrpr.railway.internal/backend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
